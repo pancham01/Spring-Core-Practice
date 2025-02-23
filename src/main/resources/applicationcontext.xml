@@ -11,4 +11,10 @@
 		<property name="gender" value="Male" />
 	</bean>
 
+	<bean name="emp2" class="spring.core.model.Employee">
+		<constructor-arg name="id" value="102" />
+		<constructor-arg name="name" value="Muskan" />
+		<constructor-arg name="gender" value="Femlae" />
+	</bean>
+
 </beans>
