@@ -9,21 +9,42 @@
 		<property name="id" value="101" />
 		<property name="name" value="Shivam" />
 		<property name="gender" value="Male" />
-		<property name="address" ref="add"/>
+		<property name="address" ref="add" />
+		<property name="list">
+			<list>
+				<value>1001</value>
+				<value>1002</value>
+				<value>1003</value>
+				<value>1001</value>
+				<value>1005</value>
+			</list>
+		</property>
+		<property name="set">
+			<set>
+				<value>2001</value>
+				<value>2002</value>
+				<value>2001</value>
+				<value>2003</value>
+				<value>2005</value>
+				<value>2001</value>
+				<value>2007</value>
+			</set>
+		</property>
+		<property name="map">
+			<map>
+				<entry key="1" value="ONE" />
+				<entry key="2" value="TWO" />
+				<entry key="3" value="THREE" />
+				<entry key="4" value="FOUR" />
+				<entry key="1" value="one" />
+				<entry key="5" value="FIVE" />
+			</map>
+		</property>
+
 	</bean>
 
-	<bean name="emp2" class="spring.core.model.Employee">
-		<constructor-arg name="id" value="102" />
-		<constructor-arg name="name" value="Muskan" />
-		<constructor-arg name="gender" value="Femlae" />
-		<constructor-arg name="address" ref="add2"/>
-	</bean>
-	
-	
-	<bean name="add2" class="spring.core.model.Address">
-		<constructor-arg name="city" value="Mumbai"/>
-		<constructor-arg name="state" value="MAHA"/>
-	</bean>
+
+
 
 	<bean name="add" class="spring.core.model.Address">
 		<property name="city" value="Noida" />
