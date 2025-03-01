@@ -14,6 +14,17 @@ public class App {
 		
 		System.out.println(bean1);
 		System.out.println(bean2);
+		
+		
+		
+		
+		
+		
+		
+//		bean1.getAddress().setCity("GZB");
+//		bean1.getAddress().setState("Noida");
+//		System.out.println(bean1);
+
 	}
 
 }
