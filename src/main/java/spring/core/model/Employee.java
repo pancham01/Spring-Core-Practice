@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
 @Getter
-//@ToString
+@ToString
 @RequiredArgsConstructor
 public class Employee {
 
