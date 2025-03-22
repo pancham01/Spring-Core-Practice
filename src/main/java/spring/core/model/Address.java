@@ -1,5 +1,7 @@
 package spring.core.model;
 
+import org.springframework.stereotype.Component;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -12,7 +14,8 @@ import lombok.ToString;
 //@Data
 @AllArgsConstructor
 @RequiredArgsConstructor
+@Component
 public class Address {
 
-	private String city, state;
+	private String city ="Shimla", state="UK";
 }

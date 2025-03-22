@@ -1,34 +1,19 @@
 package spring.core;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import spring.core.model.Employee;
 
 public class App {
 
 	public static void main(String[] args) {
-		ApplicationContext ioc =new ClassPathXmlApplicationContext("applicationcontext.xml");
-		Employee bean1 = ioc.getBean("emp",Employee.class);
-		Employee bean2 = ioc.getBean("emp",Employee.class);
-		Employee bean3 = ioc.getBean("emp",Employee.class);
-		Employee bean4 = ioc.getBean("emp",Employee.class);
-//		Employee bean2 = ioc.getBean("emp2",Employee.class);
-		
+		ApplicationContext ioc =new AnnotationConfigApplicationContext("spring.core");
+		Employee bean1 = ioc.getBean(Employee.class);
+		bean1.setName("Vikas");
 		System.out.println(bean1);
-		System.out.println(bean2);
-		System.out.println(bean3);
-		System.out.println(bean4);
 		
 		
-		
-		
-		
-		
-		
-//		bean1.getAddress().setCity("GZB");
-//		bean1.getAddress().setState("Noida");
-//		System.out.println(bean1);
 
 	}
 
